@@ -1,0 +1,895 @@
+@charset "UTF-8";
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@ PC (해상도 1024px)*/
+@media all and (min-width:1024px) {
+body {
+	height: 100%;
+	width: 100%;
+	margin: 0;
+	padding: 0; 
+	background: white;
+}
+p, td, b, a, li{
+	font-family: 'Nanum Gothic';
+}
+	/* 배너 */
+	#banner {
+		width: 100%;
+		height: 100%;
+	}
+	#banner img {
+		width: 100%;
+		height: 100%;
+		background: black;
+		z-index: 1;
+		min-height: 100%;
+	}
+	#banner_title{
+		position: relative;
+		top: -500px;
+		color: white;
+		width: 100%;
+		text-align: center;
+		z-index: 2;
+		font-weight: 700;
+	}
+	p.result1,p.result2{ 
+		display: inline-block; 
+		font-size:59px; 
+		height:59px; 
+		line-height: 59px; 
+		border-right: 1px solid #000; 
+		padding-right: 2px; 
+		box-sizing: border-box; 
+		padding:0; 
+		margin:5px; 
+	}
+	p.result2{
+	    margin-top: 55px;
+	}
+	p.cursor {animation: cursor 0.5s infinite;}
+
+ 	@keyframes cursor{ 
+      0%{border-right: 1px solid #000} 
+      50%{border-right: 1px solid #fff} 
+      100%{border-right: 1px solid #000} 
+    }
+
+	/* 사이드바 */
+	#sidebar{
+		width: 100px;
+    	background: rgba(0,0,0,0.2);
+    	height: 150px;
+    	text-decoration: none;
+    	border-top-right-radius: 50px;
+    	border-bottom-right-radius: 50px;
+    	position: fixed;
+    	top:25%;
+    	left:0;
+    	z-index: 3;
+	}
+	#sidebar p{
+	    margin-top: 21px;
+    	margin-left: 8px;
+	}
+	#sidebar a{
+	    text-decoration: none;
+    	color: black;
+    	font-size: 16px;
+	}
+	#sidebar a:hover{
+		color:gray;
+	}
+
+	/* 프로젝트 */
+	.title p {
+    	font-size: 75px;
+    	margin-bottom: -5px;
+		margin-top: 30px;
+		text-align: center;
+		font-family: 'Nanum Pen Script';
+	}
+	.title{
+	    border-top: 2px dotted lightgray;
+   		margin-top: 50px;
+	}
+	#project .title{
+		margin-top: 0;
+	}
+	.pro_1 {
+		height: 300px;
+		background: white;
+	}
+	.pro_2 {
+		height: 300px;
+		background: rgba(255, 255, 229, 0.5);
+	}
+	.pro_box1 {
+		position: relative;
+		display: inline-flex;
+		border: 1px solid;
+		width: 80%;
+		margin-left: 10%;
+		height: 200px;
+		top: 50px;
+		text-align: center;
+		font-size: 17px;
+		background: rgba(255, 255, 229, 0.5);
+	}
+	.pro_box2 {
+		position: relative;
+		display: inline-flex;
+		border: 1px solid;
+		width: 80%;
+		margin-left: 10%;
+		height: 200px;
+		top: 50px;
+		text-align: center;
+		font-size: 17px;
+		background: white;
+	}
+	.pro_img {
+		width: 21%;
+		padding: 5px;
+	}
+	.pro_img img {
+		width: 100%;
+		height: 100%;
+	}
+	.pro_des {
+		width: 59%;
+		text-align: left;
+		padding: 10px;
+	}
+	.pro_des p {
+		width: 100%;
+		height: 200px;
+		margin-top: 10px;
+		font-size: 16px;
+	}
+	.pro_ppt {
+		width: 10%;
+		border-left: 1px dotted;
+	}
+	.pro_ppt p {
+		margin-top: 80px;
+	}
+	.pro_ppt a{
+		color: black;
+	}
+	.pro_ppt a:link{
+		text-decoration: none;
+	}
+	.pro_ppt a:visited{
+		text-decoration: none;
+	}
+	.pro_ppt a:hover{
+		text-decoration: none;
+		color:#BCA9F5;
+	}
+	.pro_git {
+		width: 10%;
+		border-left: 1px dotted;
+	}
+	
+	.pro_git p{
+		margin-top: 80px;	
+	}
+	.pro_git a{
+		color: black;
+	}
+	.pro_git a:link{
+		text-decoration: none;
+	}
+	.pro_git a:visited{
+		text-decoration: none;
+	}
+	.pro_git a:hover{
+		color:#BCA9F5;
+		text-decoration: none;
+	}
+	.mobile{
+		display: none;
+	}
+	
+	/* 주요 기술 */
+	#tech_box{
+	    text-align: center;
+    	font-size: 25px;
+    	margin-top: 50px;
+    	width: 100%;
+	}
+	#tech_first{
+		display: flex;
+		margin-left: 15%;
+		width:85%;
+	}
+	#tech_second{
+		display: flex;
+		margin-left: 15%;
+		width:85%;
+		margin-top: 5%;
+	}
+	.tech_list{
+		width: 8%;
+   		height: 110px;
+    		margin-left: 10%;
+	}
+	.tech_list img{
+		width: 100%;
+    	height: 100%;
+	}
+	.tech_list p{
+		margin-top: 0px;
+	}
+	
+	/* 자기소개서 */
+	#about_out{
+	    width: 70%;
+    	margin-left: 15%;
+	}
+	#about_out, .about_border{
+		border: 1px solid;
+	    font-size: 18px;
+	    padding: 5px;
+	}
+	#about_out p{
+		font-size: 30px;
+    	text-align: center;
+    	margin: 20px 0;
+	}
+	.about_border:nth-child(even){
+		    font-family: 'Nanum Myeongjo';
+	}
+
+	#text_box2_1{
+		width:110%;
+		margin-left: -7%;
+		background: white;
+	}
+	#text_box2_1 img{
+		width: 90%;
+    	margin-left: 5%;
+	}
+	#text_box2_1 p{
+		font-size: 15px;
+    	margin: 5px;
+	}
+	.box_m{
+    	margin: 0 -5px 0 -5px;
+	}
+	.box_gra{
+		height: 30px;
+    	margin: -5px -5px 0 -5px;
+	}
+	.box_gra:nth-child(1){
+		height: 15px;
+    	margin-top: -10px;
+    	background: rgba(255,0,0,0.1);
+	}
+	.box_gra:nth-child(3){
+		background:linear-gradient( to bottom, rgba(255,0,0,0.1), rgba(255,255,0,0.1) );
+	}
+	.box_gra:nth-child(5){
+		background:linear-gradient( to bottom, rgba(255,255,0,0.1), rgba(0,255,0,0.1) );
+	}
+	.box_gra:nth-child(7){
+		background:linear-gradient( to bottom, rgba(0,255,0,0.1), rgba(0,0,255,0.1) );
+	}
+	.box_gra:nth-child(9){
+		background:linear-gradient( to bottom, rgba(0,0,255,0.1), rgba(255,0,255,0.1) );
+	}
+	.box_gra:nth-child(11){
+		height: 15px;
+    	margin-bottom: -6px;
+    	background: rgba(255,0,255,0.1);
+	}
+	#text_box2_1_1{
+		background: rgba(255,0,0,0.1);
+	}
+	#text_box2_1_2{
+		background: rgba(255,255,0,0.1);
+	}
+	#text_box2_1_3{
+		background: rgba(0,255,0,0.1);
+	}
+	#text_box2_1_4{
+		background: rgba(0,0,255,0.1);
+	}
+	#text_box2_1_5{
+		background: rgba(255,0,255,0.1);
+	}
+
+	
+	/* quick top */
+	#move_top_btn{
+		color:black;
+		position: fixed;
+		right:2%;
+		bottom:50px;
+		display: none;
+		z-index: 100;
+		text-decoration: none;
+	}
+	
+	/* footer */
+	/* ps */
+	#ps{
+	    text-align: center;
+	    margin-top: -50px;
+	}
+	#ps p{
+	    font-size: 18px;
+    	margin-bottom: -30px;
+	}
+	#footer{
+	    font-size: 38px;
+    	background: #d8d1ff;
+    	padding: 80px;
+    	text-align: center;
+    	margin-top: 50px;
+	}
+	#footer p:nth-child(2){
+	    margin-top: 55px;
+    	margin-bottom: -30px;
+	}
+}
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 테블릿 가로, 테블릿 세로 (해상도 768px ~ 1023px)*/
+@media all and (min-width:768px) and (max-width:1023px) {
+body {
+	margin: 0;
+	padding: 0; width : 100%;
+	height: 100%;
+	width: 100%;
+	background: white;
+}
+p, td, b, a, li{
+	font-family: 'Nanum Gothic';
+}
+	/* 배너 */
+	#banner {
+		width: 100%;
+		height: 100%;
+	}
+	#banner img {
+		width: 100%;
+		height: 100%;
+		background: black;
+		z-index: 1;
+		min-height: 100%;
+	}
+	#banner_title{
+		position: relative;
+		top: -500px;
+		color: white;
+		width: 100%;
+		text-align: center;
+		z-index: 2;
+		font-weight: 700;
+	}
+	p.result1,p.result2{ 
+		display: inline-block; 
+		font-size:50px; 
+		height:50px; 
+		line-height: 50px; 
+		border-right: 1px solid #000; 
+		padding-right: 2px; 
+		box-sizing: border-box; 
+		padding:0; 
+		margin:5px; 
+	}
+	p.result2{
+	    margin-top: 55px;
+	}
+	p.cursor {animation: cursor 0.5s infinite;}
+
+ 	@keyframes cursor{ 
+      0%{border-right: 1px solid #000} 
+      50%{border-right: 1px solid #fff} 
+      100%{border-right: 1px solid #000} 
+    }
+
+	/* 사이드바 */
+	#sidebar{
+		width: 80px;
+    	background: rgba(0,0,0,0.2);
+    	height: 130px;
+    	text-decoration: none;
+    	border-top-right-radius: 30px;
+    	border-bottom-right-radius: 30px;
+    	position: fixed;
+    	top:25%;
+    	left:-5;
+    	z-index: 3;
+	}
+	#sidebar p{
+	    margin-top: 21px;
+    	margin-left: 7px;
+	}
+	#sidebar a{
+	    text-decoration: none;
+    	color: black;
+    	font-size: 13px;
+	}
+	#sidebar a:hover{
+		color:gray;
+	}
+
+	/* 프로젝트 */
+	.title p {
+    	font-size: 63px;
+    	margin-bottom: -5px;
+		margin-top: 30px;
+		text-align: center;
+		font-family: 'Nanum Pen Script';
+	}
+	.title{
+	    border-top: 2px dotted lightgray;
+   		margin-top: 40px;
+	}
+	#project .title{
+		margin-top: 0;
+	}
+	.pro_1 {
+		height: 250px;
+		background: white;
+	}
+	.pro_2 {
+		height: 250px;
+		background: rgba(255, 255, 229, 0.5);
+	}
+	.pro_box1 {
+		position: relative;
+		display: inline-flex;
+		border: 1px solid;
+		width: 80%;
+		margin-left: 10%;
+		height: 170px;
+		top: 40px;
+		text-align: center;
+		font-size: 15px;
+		background: rgba(255, 255, 229, 0.5);
+	}
+	.pro_box2 {
+		position: relative;
+		display: inline-flex;
+		border: 1px solid;
+		width: 80%;
+		margin-left: 10%;
+		height: 170px;
+		top: 40px;
+		text-align: center;
+		font-size: 15px;
+		background: white;
+	}
+	.pro_img {
+		width: 21%;
+		padding: 5px;
+	}
+	.pro_img img {
+		width: 100%;
+		height: 100%;
+	}
+	.pro_des {
+		width: 59%;
+		text-align: left;
+		padding: 10px;
+	}
+	.pro_des p {
+		width: 100%;
+		height: 200px;
+		margin-top: -4px;
+		font-size: 13px;
+	}
+	.pro_ppt {
+		width: 10%;
+		border-left: 1px dotted;
+	}
+	.pro_ppt p {
+		margin-top: 80px;
+	}
+	.pro_ppt a{
+		color: black;
+	}
+	.pro_ppt a:link{
+		text-decoration: none;
+	}
+	.pro_ppt a:visited{
+		text-decoration: none;
+	}
+	.pro_ppt a:hover{
+		text-decoration: none;
+		color:#BCA9F5;
+	}
+	.pro_git {
+		width: 10%;
+		border-left: 1px dotted;
+	}
+	
+	.pro_git p{
+		margin-top: 80px;	
+	}
+	.pro_git a{
+		color: black;
+	}
+	.pro_git a:link{
+		text-decoration: none;
+	}
+	.pro_git a:visited{
+		text-decoration: none;
+	}
+	.pro_git a:hover{
+		color:#BCA9F5;
+		text-decoration: none;
+	}
+	.mobile{
+		display: none;
+	}
+	
+	/* 주요 기술 */
+	#tech{
+		 padding-top: 30px;
+	}
+	#tech_box{
+	   	text-align: center;
+    		font-size: 20px;
+    		margin-top: 50px;
+    		width: 100%;
+	}
+	#tech_first{
+		display: flex;
+		margin-left: 10%;
+		width:90%;
+	}
+	#tech_second{
+		display: flex;
+		margin-left: 10%;
+		width:90%;
+		margin-top: 5%;
+	}
+	.tech_list{
+		width: 10%;
+   		height: 90px;
+    	margin-left: 10%;
+	}
+	.tech_list img{
+		width: 100%;
+    	height: 100%;
+	}
+	.tech_list p{
+		margin-top: 0px;
+	}
+
+	
+	/* 자기소개서 */
+	#about_out{
+	    width: 70%;
+    	margin-left: 15%;
+	}
+	#about_out, .about_border{
+		border: 1px solid;
+	    font-size: 15px;
+	    padding: 5px;
+	}
+	#about_out p{
+		font-size: 25px;
+    	text-align: center;
+    	margin: 20px 0;
+	}
+	.about_border:nth-child(even){
+		    font-family: 'Nanum Myeongjo';
+	}
+	#text_box2_1{
+		width:110%;
+		margin-left: -8%;
+		background: white;
+	}
+	#text_box2_1 img{
+		width: 90%;
+    	margin-left: 5%;
+	}
+	#text_box2_1 p{
+		font-size: 12px;
+    	margin: 5px;
+	}
+	.box_m{
+    	margin: 0 -5px 0 -5px;
+	}
+	.box_gra{
+		height: 30px;
+    	margin: -5px -5px 0 -5px;
+	}
+	.box_gra:nth-child(1){
+		height: 15px;
+    	margin-top: -10px;
+    	background: rgba(255,0,0,0.1);
+	}
+	.box_gra:nth-child(3){
+		background:linear-gradient( to bottom, rgba(255,0,0,0.1), rgba(255,255,0,0.1) );
+	}
+	.box_gra:nth-child(5){
+		background:linear-gradient( to bottom, rgba(255,255,0,0.1), rgba(0,255,0,0.1) );
+	}
+	.box_gra:nth-child(7){
+		background:linear-gradient( to bottom, rgba(0,255,0,0.1), rgba(0,0,255,0.1) );
+	}
+	.box_gra:nth-child(9){
+		background:linear-gradient( to bottom, rgba(0,0,255,0.1), rgba(255,0,255,0.1) );
+	}
+	.box_gra:nth-child(11){
+		height: 15px;
+    	margin-bottom: -6px;
+    	background: rgba(255,0,255,0.1);
+	}
+	#text_box2_1_1{
+		background: rgba(255,0,0,0.1);
+	}
+	#text_box2_1_2{
+		background: rgba(255,255,0,0.1);
+	}
+	#text_box2_1_3{
+		background: rgba(0,255,0,0.1);
+	}
+	#text_box2_1_4{
+		background: rgba(0,0,255,0.1);
+	}
+	#text_box2_1_5{
+		background: rgba(255,0,255,0.1);
+	}
+
+		
+	/* quick top */
+	#move_top_btn{
+		color:black;
+		position: fixed;
+		right:2%;
+		bottom:50px;
+		display: none;
+		z-index: 100;
+		text-decoration: none;
+	}
+	
+	/* footer */
+	/* ps */
+	#ps{
+	    text-align: center;
+	    margin-top: -50px;
+	}
+	#ps p{
+	    font-size: 13px;
+    	margin-bottom: -30px;
+	}
+	#footer{
+	    font-size: 30px;
+    	background: #d8d1ff;
+    	padding: 80px;
+    	text-align: center;
+    	margin-top: 50px;
+	}
+	#footer p:nth-child(2){
+	    margin-top: 50px;
+    	margin-bottom: -30px;
+	}
+}
+
+/*@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ 모바일 가로, 모바일 세로 (해상도 480px ~ 767px)*/
+@media all and (max-width:767px) {
+body {
+	margin: 0;
+	padding: 0; 
+	width : 100%;
+	height: 100%;
+	background: white;
+}
+p, td, b, a, li{
+	font-family: 'Nanum Gothic';
+}
+	/* 배너 */
+	#banner {
+		width: 100%;
+		height: 40%;
+	}
+	#banner img {
+		width: 100%;
+		height: 100%;
+		background: black;
+		z-index: 1;
+		min-height: 100%;
+	}
+	#banner_title{
+		position: relative;
+		top: -200px;
+		color: white;
+		width: 100%;
+		text-align: center;
+		z-index: 2;
+		font-weight: 700;
+	}
+	p.result1,p.result2{ 
+		display: inline-block; 
+		font-size:25px; 
+		height:25px; 
+		line-height: 25px; 
+		border-right: 1px solid #000; 
+		padding-right: 2px; 
+		box-sizing: border-box; 
+		padding:0; 
+		margin:5px; 
+	}
+	p.result2{
+	    margin-top: 55px;
+	}
+	p.cursor {animation: cursor 0.5s infinite;}
+
+ 	@keyframes cursor{ 
+      0%{border-right: 1px solid #000} 
+      50%{border-right: 1px solid #fff} 
+      100%{border-right: 1px solid #000} 
+    }
+
+	/* 사이드바 */
+	#sidebar{
+		display:none;
+	}
+
+	/* 프로젝트 */
+	.title p {
+    		font-size: 50px;
+    		margin-bottom: -5px;
+		margin-top: 30px;
+		text-align: center;
+		font-family: 'Nanum Pen Script';
+	}
+	.title{
+	    border-top: 2px dotted lightgray;
+   		margin-top: 50px;
+	}
+	#project .title{
+		margin-top: 0;
+	}
+	.pro_1 {
+		height: 275px;
+		background: white;
+	}
+	.pro_2 {
+		height: 275px;
+		background: rgba(255, 255, 229, 0.5);
+	}
+	.pro_box1 {
+		position: relative;
+		display: inline-flex;
+		border: 1px solid;
+		width: 80%;
+		margin-left: 10%;
+		height: 215px;
+		top: 25px;
+		text-align: center;
+		font-size: 9px;
+		background: rgba(255, 255, 229, 0.5);
+	}
+	.pro_box2 {
+		position: relative;
+		display: inline-flex;
+		border: 1px solid;
+		width: 80%;
+		margin-left: 10%;
+		height: 215px;
+		top: 25px;
+		text-align: center;
+		font-size: 9px;
+		background: white;
+	}
+	.pro_img {
+		width: 100%;
+		padding: 5px;
+	}
+	.pro_img img {
+		width: 100%;
+		height: 100%;
+	}
+	.pro_des {
+		width: 100%;
+		text-align: left;
+		padding: 10px;
+	}
+	.pro_des p {
+		width: 100%;
+		height: 200px;
+		margin-top: 5px;
+		font-size: 10px;
+	}
+	.pro_ppt {
+		display:none;
+	}
+	.pro_git {
+		display:none;
+	}
+	.mobile{
+		text-align:center;
+		height:20px;
+		margin-top: 30px;
+		font-size:10px;
+		color:red;	
+	}
+
+	/* 주요 기술 */
+	#tech_box{
+		text-align: center;
+    		font-size: 13px;
+    		margin-top: 50px;
+    		width: 100%;
+	}
+	#tech_first{
+		display: flex;
+		width:95%;
+		margin-left:-10px;
+	}
+	#tech_second{
+		display: flex;
+		width:95%;
+		margin-top: 5%;
+		margin-left:-10px;
+	}
+	.tech_list{
+		width: 15%;
+   		height: 60px;
+    		margin-left: 10%;
+	}
+	.tech_list img{
+		width: 100%;
+    		height: 100%;
+	}
+	.tech_list p{
+		margin-top: 0px;
+	}	
+
+	/* 자기소개서 */
+	#about_out{
+		width: 70%;
+    		margin-left: 15%;
+		margin-top: 10px;
+	}
+	#about_out, .about_border{
+		border: 1px solid;
+	    	font-size: 10px;
+	    	padding: 5px;
+	}
+	#about_out p{
+		font-size: 20px;
+    		text-align: center;
+    		margin: 20px 0;
+	}
+	#text_box2{
+		display: none;
+	}
+	#text_box2_1 div{
+		display:none;
+	}
+	
+	/* quick top */
+	#move_top_btn{
+		visibility: hidden;
+	}
+	
+	/* footer */
+	/* ps */
+	#ps{
+	    text-align: center;
+	    margin-top: -50px;
+	}
+	#ps p{
+	    font-size: 6.5px;
+    	margin-bottom: -40px;
+	}
+	#footer{
+	    font-size: 17px;
+    	background: #d8d1ff;
+    	padding: 60px 55px;
+    	text-align: center;
+    	margin-top: 50px;
+	}
+	#footer p:nth-child(2){
+	    margin-top: 55px;
+    	margin-bottom: -30px;
+	}
+}
